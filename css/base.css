@@ -1,0 +1,12 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	/*列表标签将点去掉*/
+
+}
+a{
+	text-transform: none;
+	/*将默认下划线去掉	*/
+	
+}
