@@ -54,6 +54,7 @@ header nav .title ul li{
 header nav .title ul li:hover{
 	background: #4eb2d6;
     /*鼠标移入是变色*/
+    cursor: pointer;
 }
 header .content{
 	width: 100%;
@@ -120,6 +121,7 @@ header .content .xiala{
 	display: block;
 	margin: 30px auto 0;
 	animation: move 1s infinite;
+	cursor: pointer;
 }
 @keyframes move{   /* 制作动效*/
 	0%{margin-top: 20px;}  /*起点*/
@@ -267,6 +269,9 @@ header .content .xiala{
 	/*background: green;*/
 	margin: 0 auto;
 }
+.works-box .anniu-box .anniu1{
+	background: #4eb2d6;
+}
 .works-box .anniu-box .anniu{
 	width: 78px;
 	height: 38px;
@@ -279,6 +284,7 @@ header .content .xiala{
 	float:left;
 	margin-right: 5px; 
 	cursor: pointer;/*移入后显示小手*/
+	/*background: blue;*/
 }
 .works-box .anniu-box .anniu:nth-child(4){
 	margin-right:0px;

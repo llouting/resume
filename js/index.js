@@ -24,6 +24,79 @@ $(function(){
 
 $(".backtop").backTop();
 	//$(".backtop") 返回按钮父容器 
+
+
+
+
+ // 向下滚动板块  向下滚动700  时间1000（1s）
+
+$(".xiala").click(function () {  
+       // 向下滚动板块  向下滚动700  时间1000（1s）
+        $({dNum:0}).animate({dNum:700},{
+            duration:1000,
+            step: function () {
+                $(window).scrollTop(this.dNum);
+            }
+        })
+    });
+
+// about me
+$(".btn").click(function () {  
+       // 向下滚动板块  向下滚动700  时间1000（1s）
+        $({dNum:0}).animate({dNum:2000},{
+            duration:1500,
+            step: function () {
+                $(window).scrollTop(this.dNum);
+            }
+        })
+    });
+
+// 顶部导航效果
+$("nav .nav li:eq(0)").click(function(){
+	$({num:$(window).scrollTop()}).animate({num:0},{
+		duration:1000,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+$("nav .nav li:eq(1)").click(function(){
+	$({num:$(window).scrollTop()}).animate({num:700},{
+		duration:1000,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+
+$("nav .nav li:eq(2)").click(function(){
+	$({num:$(window).scrollTop()}).animate({num:1200},{
+		duration:1000,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+$("nav .nav li:eq(3)").click(function(){
+	$({num:$(window).scrollTop()}).animate({num:2000},{
+		duration:1000,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+
+$("nav .nav li:eq(4)").click(function(){
+	$({num:$(window).scrollTop()}).animate({num:4000},{
+		duration:1000,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+
+
+
 }) 
 
 
